@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 25% 98%; --foreground: 215 28% 14%;
+    --card: 0 0% 100%; --primary: 343 62% 42%; --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 94%; --secondary-foreground: 215 28% 20%;
+    --muted: 210 20% 95%; --muted-foreground: 215 12% 42%;
+    --accent: 343 60% 95%; --accent-foreground: 343 62% 30%;
+    --border: 214 20% 88%; --input: 214 20% 85%; --ring: 343 62% 42%;
+    --success: 152 55% 30%; --radius: 0.6rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 215 28% 8%; --foreground: 210 20% 96%;
+      --card: 215 26% 11%; --primary: 343 70% 60%; --primary-foreground: 215 28% 8%;
+      --secondary: 215 22% 17%; --secondary-foreground: 210 20% 92%;
+      --muted: 215 22% 15%; --muted-foreground: 215 14% 66%;
+      --accent: 343 35% 18%; --accent-foreground: 343 80% 85%;
+      --border: 215 20% 20%; --input: 215 20% 24%; --success: 152 50% 55%;
+    }
+  }
+  body { @apply bg-background text-foreground font-sans antialiased min-h-screen; }
+  dialog::backdrop { background: rgb(0 0 0 / 0.5); }
+}
