@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { usePrices } from './hooks/usePrices';
 import { usePlaces } from './hooks/usePlaces';
 import { Filters, type FilterState } from './components/Filters';
@@ -69,7 +70,6 @@ export default function App() {
           <Button onClick={() => setDialogOpen(true)}>Add price</Button>
         </div>
       </header>
-
       <main className='mx-auto max-w-5xl space-y-6 px-4 py-6'>
         <Summary rows={rows} areaName={areaName} />
         <Filters
@@ -139,6 +139,7 @@ export default function App() {
       >
         {toast}
       </div>
+      <Analytics />
     </>
   );
 }
