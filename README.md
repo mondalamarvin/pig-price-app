@@ -1,4 +1,4 @@
-# Presyo
+# Pig Price App
 
 Crowd-sourced pig prices (live weight and meat) by town and province, with accuracy voting.
 Vite + React + TypeScript + Tailwind, Supabase for database and auth.

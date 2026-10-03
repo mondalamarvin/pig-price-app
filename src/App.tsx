@@ -60,7 +60,7 @@ export default function App() {
               🐖
             </span>
             <div className='leading-tight'>
-              <p className='text-base font-semibold'>Presyo</p>
+              <p className='text-base font-semibold'>Pig Price App</p>
               <p className='text-xs text-muted-foreground'>
                 Pig prices, reported by your neighbors
               </p>
