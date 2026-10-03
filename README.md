@@ -27,7 +27,7 @@ fields it found, and the `PARENT_KEYS` list at the top is the one thing to adjus
 - One row per town. Posting a price for a town that already has one updates it, records the change in `price_history`, and shows a green arrow up / red arrow down with the amount.
 - Posting the same price again just refreshes "updated"; a changed price also resets that town's votes.
 - Tables are read-only to the public. All writes go through the `submit_price` and `cast_vote` functions.
-- "Confirmed by neighbors" at +10 net votes, "Disputed" at 0 or below.
+- "Confirmed by neighbors" at +10 net votes, "Disputed" at below 0.
 
 ## Known limits (fine for now, fix before launch)
 
